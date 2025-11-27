@@ -33,6 +33,7 @@
 :root {
     --color-light: #fff;
     --color-black: #000;
+    --color-dark-grey: #171717;
     --color-light-grey: #666666;
     --color-TuftsBlue: #4a90e2;
     --color-mostlyBlack: #232323;
@@ -42,6 +43,7 @@
 
     --header-height: 90px;
     --input-height: 50px;
+    --border-radius: 5px;
 
     --container-width: 1170px;
     --container-padding-x: 15px;
@@ -67,11 +69,7 @@ svg * {
 
 a {
     text-decoration: none;
-    color: var(--color-light);
-}
-
-a:hover {
-    color: var(--color-TuftsBlue);
+    color: inherit;
 }
 
 button,
@@ -94,10 +92,6 @@ textarea {
 
 p {
     margin-block: 0;
-}
-
-p:not([class]):not(:last-child) {
-    margin-bottom: 24px;
 }
 
 .container {
@@ -126,8 +120,13 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.38;
     color: var(--color-light);
+}
+
+time {
+    color: inherit;
 }
 
 .header {
@@ -154,6 +153,10 @@ h6 {
     align-items: center;
 }
 
+.header__menu-link:hover {
+    color: var(--color-TuftsBlue);
+}
+
 .header-search__icon {
     width: 16px;
     height: 17px;
@@ -164,34 +167,76 @@ h6 {
 .section-article {
     padding-top: 30px;
     padding-bottom: 80px;
+    color: var(--color-light);
 }
 
-.section-article__grid {
+.grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 28px;
 }
 
+.section-article__item {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.car-article__image img {
+    border-radius: var(--border-radius);
+}
+
+.car-article__image::after {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .5));
+    pointer-events: none;
+}
+
+
+
 .section-article__item:first-child {
-    grid-column: 4 span;
-    grid-row: 4 span;
+    grid-column: span 4;
+    grid-row: span 4;
 }
 
 .car-article {
     position: relative;
 }
 
-.news-article__category {
+.category {
+    padding: 4px 12px 2px 12px;
+    font-size: 12px;
+    border-radius: var(--border-radius);
+    color: var(--color-light);
+    background-color: var(--color-TuftsBlue);
+}
+
+.car-article__meta {
+    margin-bottom: 6px;
+}
+
+.article-meta {
+    color: var(--color-light);
+    font-style: italic;
+    line-height: 1.28;
+}
+
+.article-date--normal {
+    font-style: normal;
+}
+
+.car-article__category {
     position: absolute;
     top: 27px;
     left: 20px;
 }
 
-.category {
-    color: var(--color-light);
-}
-
-.news-article__description {
+.car-article__description {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -200,11 +245,105 @@ h6 {
     padding-right: 85px;
 }
 
-.article-meta {
+.article-title {
     color: var(--color-light);
+    font-size: clamp(16px, 1.35vw, 26px);
 }
 
-.section-article__item {
-    grid-column: 4 span;
-    grid-row: 2 span;
+.article-title a:hover {
+    color: var(--color-TuftsBlue);
+}
+
+
+/* hero */
+.article-hero__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.article-hero__main {
+    margin-bottom: 67px;
+
+}
+
+.article-hero__main {
+    max-width: 770px;
+    width: 100%;
+}
+
+.article-hero__main-item {
+    padding-bottom: 120px;
+}
+
+.article-hero__main-item:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+
+.hero-article-description {
+    position: absolute;
+    left: 50%;
+    bottom: -27%;
+    transform: translateX(-50%);
+    max-width: 730px;
+    width: 100%;
+    padding: 30px 34px;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero-article-description__category {
+    margin-bottom: 20px;
+}
+
+.hero-article-description__title {
+    margin-bottom: 15px;
+}
+
+.hero-article-description__meta {
+    margin-bottom: 14px;
+}
+
+.article-title--black {
+    color: var(--color-dark-grey);
+}
+
+.article-meta--black {
+    color: var(--color-light-grey);
+}
+
+.article-text {
+    max-width: 614px;
+}
+
+.article-hero__right {
+    max-width: 270px;
+}
+
+.article-hero__right__image {
+    margin-bottom: 20px;
+}
+
+.article-hero__right-content {
+    transform: translateX(0);
+    box-shadow: none;
+    padding: 0;
+}
+
+.article-hero__right-title {
+    margin-bottom: 8px;
+}
+
+.article-hero__right-position {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999;
+}
+
+.right-article-title {
+    font-size: clamp(16px, 0.93vw, 18px);
+    color: var(--color-dark-grey);
 }
