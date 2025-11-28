@@ -16,22 +16,22 @@
                 <img src="./images/logo.png" alt="Premium Car Logo" class="header__logo-image" width="100" height="23"
                     loading="lazy">
             </a>
-            <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">Home</a>
+            <nav class="header__menu nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__item">
+                        <a href="/" class="nav-menu__link">Home</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">Recipes</a>
+                        <a href="/" class="nav-menu__link">Recipes</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">Article</a>
+                        <a href="/" class="nav-menu__link">Article</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">Contact</a>
+                        <a href="/" class="nav-menu__link">Contact</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="/" class="header__menu-link">Purchase</a>
+                        <a href="/" class="nav-menu__link">Purchase</a>
                     </li>
                 </ul>
             </nav>
@@ -558,7 +558,7 @@
                     Most popular
                 </h2>
                 <ul class="popular-articles__list most-popular-row">
-                    <li class="popular-articles__item article-item">
+                    <li class="popular-articles__item most-popular-article-item">
                         <article class="car-article">
                             <div class="popular-articles__image">
                                 <img src="./images/most-popular/1.jpg" alt="black Mercedes">
@@ -577,7 +577,7 @@
                             </div>
                         </article>
                     </li>
-                    <li class="popular-articles__item article-item">
+                    <li class="popular-articles__item most-popular-article-item">
                         <article class="car-article">
                             <div class="popular-articles__image">
                                 <img src="./images/most-popular/2.jpg" alt="black Mercedes">
@@ -596,7 +596,7 @@
                             </div>
                         </article>
                     </li>
-                    <li class="popular-articles__item article-item">
+                    <li class="popular-articles__item most-popular-article-item">
                         <article class="car-article">
                             <div class="popular-articles__image">
                                 <img src="./images/most-popular/3.jpg" alt="black Mercedes">
@@ -615,7 +615,7 @@
                             </div>
                         </article>
                     </li>
-                    <li class="popular-articles__item article-item">
+                    <li class="popular-articles__item most-popular-article-item">
                         <article class="car-article">
                             <div class="popular-articles__image">
                                 <img src="./images/most-popular/4.jpg" alt="black Mercedes">
@@ -637,6 +637,157 @@
                 </ul>
             </div>
         </section>
+        <footer class="footer">
+            <div class="container footer__inner">
+                <h2 class="visually-hidden">Informational block at the bottom of the page</h2>
+                <div class="footer__row">
+                    <div class="footer__about-us">
+                        <a href="/" class="footer__logo">
+                            <img src="./images/logo.png" alt="Premium Car Logo" width="100" height="23" loading="lazy">
+                        </a>
+                        <p class="footer__about-us-descr">
+                            Short description about the company Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                        </p>
+                        <div class="footer__soc1als">
+                            <h3 class="footer__soc1als-title footer-block-title">
+                                Keep in touch
+                            </h3>
+                            <ul class="footer__soc1als-list">
+                                <li class="footer__soc1als-item">
+                                    <a href="/" class="footer__soc1als-link">
+                                        <img src="./icons/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc1als-item">
+                                    <a href="/" class="footer__soc1als-link">
+                                        <img src="./icons/twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc1als-item">
+                                    <a href="/" class="footer__soc1als-link">
+                                        <img src="./icons/pinterest.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc1als-item">
+                                    <a href="/" class="footer__soc1als-link">
+                                        <img src="./icons/google-plus.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc1als-item">
+                                    <a href="/" class="footer__soc1als-link">
+                                        <img src="./icons/instagram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__news">
+                        <h3 class="footer__news-title footer-block-title">
+                            Recent posts
+                        </h3>
+                        <ul class="footer__news-list">
+                            <li class="footer__news-item">
+                                <article class="footer__news-article car-article">
+                                    <div class="footer__news-article-image">
+                                        <img src="./images/footer-news/1.jpg" alt="">
+                                    </div>
+                                    <div class="footer__news-article-description">
+                                        <h4 class="footer__news-article-title article-title">
+                                            <a href="/">One of Saturn’s largest rings may be newer than…</a>
+                                        </h4>
+                                        <div class="footer__news-article-meta article-meta">
+                                            <a href="/" class="article-author">Rickie Baroch</a>
+                                            <span class="separator"> – </span>
+                                            <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </li>
+                            <li class="footer__news-item">
+                                <article class="footer__news-article car-article">
+                                    <div class="footer__news-article-image">
+                                        <img src="./images/footer-news/2.jpg" alt="">
+                                    </div>
+                                    <div class="footer__news-article-description">
+                                        <h4 class="footer__news-article-title article-title">
+                                            <a href="/">One of Saturn’s largest rings may be newer than…</a>
+                                        </h4>
+                                        <div class="footer__news-article-meta article-meta">
+                                            <a href="/" class="article-author">Rickie Baroch</a>
+                                            <span class="separator"> – </span>
+                                            <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="footer__news-item">
+                                <article class="footer__news-article car-article">
+                                    <div class="footer__news-article-image">
+                                        <img src="./images/footer-news/3.jpg" alt="">
+                                    </div>
+                                    <div class="footer__news-article-description">
+                                        <h4 class="footer__news-article-title article-title">
+                                            <a href="/">One of Saturn’s largest rings may be newer than…</a>
+                                        </h4>
+                                        <div class="footer__news-article-meta article-meta">
+                                            <a href="/" class="article-author">Rickie Baroch</a>
+                                            <span class="separator"> – </span>
+                                            <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="/" class="footer__form-signup">
+                        <h3 class="footer__form-signup-title footer-block-title">
+                            Newsletter
+                        </h3>
+                        <div class="field">
+                            <label class="visually-hidden" for="name">Your name</label>
+                            <input type="text" id="name" name="username" class="field-control footer-field-control"
+                                placeholder="Your name">
+                        </div>
+                        <div class="field">
+                            <label class="visually-hidden" for="email">Your email adress</label>
+                            <input type="text" id="email" name="email" class="field-control footer-field-control"
+                                placeholder="Your email adress">
+                        </div>
+                        <button type="submit" class="form-button button">Subscribe to newsletter</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright" role="contentinfo">
+                <div class="container footer__copyright-row">
+                    <small>
+                        <span aria-hidden="true">©</span>
+                        <time datetime="2019">2019</time> Logwork. All rights reserved.
+                    </small>
+                    <nav class="__copyright-menu nav-menu">
+                        <ul class="nav-menu__list">
+                            <li class="nav-menu__item">
+                                <a href="/" class="nav-menu__link">Home</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="nav-menu__link">Recipes</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="nav-menu__link">Article</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="nav-menu__link">Contact</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="/" class="nav-menu__link">Purchase</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </footer>
     </main>
 </body>
 
