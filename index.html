@@ -13,25 +13,29 @@
     <header class="header">
         <div class="container header__inner">
             <a href="/" class="header__logo">
-                <img src="./images/logo.png" alt="Premium Car Logo" class="header__logo-image" width="100" height="23"
-                    loading="lazy">
+                <img src="./images/logo.png" alt="Premium Car Logo" width="100" height="23" loading="lazy">
             </a>
-            <nav class="header__menu nav-menu">
-                <ul class="nav-menu__list">
-                    <li class="nav-menu__item">
-                        <a href="/" class="nav-menu__link">Home</a>
+            <nav class="header__menu menu">
+                <button class="header__menu-burger button-reset " aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Home</a>
                     </li>
-                    <li class="header__menu-item">
-                        <a href="/" class="nav-menu__link">Recipes</a>
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Recipes</a>
                     </li>
-                    <li class="header__menu-item">
-                        <a href="/" class="nav-menu__link">Article</a>
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Article</a>
                     </li>
-                    <li class="header__menu-item">
-                        <a href="/" class="nav-menu__link">Contact</a>
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Contact</a>
                     </li>
-                    <li class="header__menu-item">
-                        <a href="/" class="nav-menu__link">Purchase</a>
+                    <li class="menu__item">
+                        <a href="/" class="menu__link">Purchase</a>
                     </li>
                 </ul>
             </nav>
@@ -51,10 +55,10 @@
             <div class="container">
                 <h2 class="visually-hidden">Premium Car News</h2>
                 <ul class="section-article__grid grid">
-                    <li class="section-article__item">
+                    <li class="grid__item">
                         <article class="car-article">
                             <div class="car-article__image">
-                                <img src="./images/news-article/1.jpg" alt="black Mercedes">
+                                <img src="./images/news-article/1.jpg" alt="black Mercedes" width="370" height="560" loading="lazy">
                             </div>
                             <a href="/" class="car-article__category category">Vehicle</a>
                             <div class="car-article__description">
@@ -71,10 +75,10 @@
                             </div>
                         </article>
                     </li>
-                    <li class="section-article__item">
+                    <li class="grid__item">
                         <article class="car-article">
                             <div class="car-article__image">
-                                <img src="./images/news-article/2.jpg" alt="black Mercedes">
+                                <img src="./images/news-article/2.jpg" alt="yellow Mercedes" width="370" height="265" loading="lazy">
                             </div>
                             <a href="/" class="car-article__category category">Vehicle</a>
                             <div class="car-article__description">
@@ -91,10 +95,10 @@
                             </div>
                         </article>
                     </li>
-                    <li class="section-article__item">
+                    <li class="grid__item">
                         <article class="car-article">
                             <div class="car-article__image">
-                                <img src="./images/news-article/3.jpg" alt="black Mercedes">
+                                <img src="./images/news-article/3.jpg" alt="black Audi" width="370" height="265" loading="lazy">
                             </div>
                             <a href="/" class="car-article__category category">Vehicle</a>
                             <div class="car-article__description">
@@ -111,10 +115,10 @@
                             </div>
                         </article>
                     </li>
-                    <li class="section-article__item">
+                    <li class="grid__item">
                         <article class="car-article">
                             <div class="car-article__image">
-                                <img src="./images/news-article/4.jpg" alt="black Mercedes">
+                                <img src="./images/news-article/4.jpg" alt="white Audi" width="370" height="265" loading="lazy">
                             </div>
                             <a href="/" class="car-article__category category">Vehicle</a>
                             <div class="car-article__description">
@@ -131,10 +135,10 @@
                             </div>
                         </article>
                     </li>
-                    <li class="section-article__item">
+                    <li class="grid__item">
                         <article class="car-article">
                             <div class="car-article__image">
-                                <img src="./images/news-article/5.jpg" alt="black Mercedes">
+                                <img src="./images/news-article/5.jpg" alt="black MG" width="370" height="265" loading="lazy">
                             </div>
                             <a href="/" class="car-article__category category">Vehicle</a>
                             <div class="car-article__description">
@@ -158,14 +162,14 @@
             <div class="container">
                 <h2 class="visually-hidden">Premium Car Articles</h2>
                 <div class="article-hero__inner">
-                    <div class="article-hero__main ">
+                    <div class="article-hero__main">
                         <ul class="article-hero__main-list">
                             <li class="article-hero__main-item">
                                 <article class="article-hero__main-article car-article">
                                     <div class="car-article__image">
-                                        <img src="./images/main-article/1.jpg" alt="black Mercedes">
+                                        <img src="./images/main-article/1.jpg" alt="black Mercedes" width="770" height="440" loading="lazy">
                                     </div>
-                                    <div class="car-article__description hero-article-description">
+                                    <div class="hero-article-description">
                                         <a href="/" class="hero-article-description__category category">Vehicle</a>
                                         <h3 class="hero-article-description__title article-title article-title--black">
                                             <a href="/">One of Saturn’s largest rings may be
@@ -176,7 +180,7 @@
                                             <span class="separator"> – </span>
                                             <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
                                         </div>
-                                        <p class="car-article__text article-text">
+                                        <p class="hero-article-description__text">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                                             doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus
                                             error
@@ -188,9 +192,9 @@
                             <li class="article-hero__main-item">
                                 <article class="article-hero__main-article car-article">
                                     <div class="car-article__image">
-                                        <img src="./images/main-article/2.jpg" alt="black Mercedes">
+                                        <img src="./images/main-article/2.jpg" alt="blue BMW" width="770" height="440" loading="lazy">
                                     </div>
-                                    <div class="car-article__description hero-article-description">
+                                    <div class="hero-article-description">
                                         <a href="/" class="hero-article-description__category category">Vehicle</a>
                                         <h3 class="hero-article-description__title article-title article-title--black">
                                             <a href="/">One of Saturn’s largest rings may be
@@ -201,7 +205,7 @@
                                             <span class="separator"> – </span>
                                             <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
                                         </div>
-                                        <p class="car-article__text article-text">
+                                        <p class="hero-article-description__text">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                                             doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus
                                             error
@@ -213,9 +217,9 @@
                             <li class="article-hero__main-item">
                                 <article class="article-hero__main-article car-article">
                                     <div class="car-article__image">
-                                        <img src="./images/main-article/3.jpg" alt="black Mercedes">
+                                        <img src="./images/main-article/3.jpg" alt="white McLaren" width="770" height="440" loading="lazy">
                                     </div>
-                                    <div class="car-article__description hero-article-description">
+                                    <div class="hero-article-description">
                                         <a href="/" class="hero-article-description__category category">Vehicle</a>
                                         <h3 class="hero-article-description__title article-title article-title--black">
                                             <a href="/">One of Saturn’s largest rings may be
@@ -226,7 +230,7 @@
                                             <span class="separator"> – </span>
                                             <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
                                         </div>
-                                        <p class="car-article__text article-text">
+                                        <p class="hero-article-description__text">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                                             doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus
                                             error
@@ -238,9 +242,9 @@
                             <li class="article-hero__main-item">
                                 <article class="article-hero__main-article car-article">
                                     <div class="car-article__image">
-                                        <img src="./images/main-article/4.jpg" alt="black Mercedes">
+                                        <img src="./images/main-article/4.jpg" alt="white Chevrolet" width="770" height="440" loading="lazy">
                                     </div>
-                                    <div class="car-article__description hero-article-description">
+                                    <div class="hero-article-description">
                                         <a href="/" class="hero-article-description__category category">Vehicle</a>
                                         <h3 class="hero-article-description__title article-title article-title--black">
                                             <a href="/">One of Saturn’s largest rings may be
@@ -251,7 +255,7 @@
                                             <span class="separator"> – </span>
                                             <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
                                         </div>
-                                        <p class="car-article__text article-text">
+                                        <p class="hero-article-description__text">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                                             doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus
                                             error
@@ -263,9 +267,9 @@
                             <li class="article-hero__main-item">
                                 <article class="article-hero__main-article car-article">
                                     <div class="car-article__image">
-                                        <img src="./images/main-article/5.jpg" alt="black Mercedes">
+                                        <img src="./images/main-article/5.jpg" alt="black Jeep" width="770" height="440" loading="lazy">
                                     </div>
-                                    <div class="car-article__description hero-article-description">
+                                    <div class="hero-article-description">
                                         <a href="/" class="hero-article-description__category category">Vehicle</a>
                                         <h3 class="hero-article-description__title article-title article-title--black">
                                             <a href="/">One of Saturn’s largest rings may be
@@ -276,7 +280,7 @@
                                             <span class="separator"> – </span>
                                             <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
                                         </div>
-                                        <p class="car-article__text article-text">
+                                        <p class="hero-article-description__text">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                                             doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus
                                             error
@@ -286,12 +290,38 @@
                                 </article>
                             </li>
                         </ul>
+                        <nav aria-label="Navigation between pages">
+                            <ol class="pagination" role="list">
+                                <li><a href="/" class="prev" aria-label="Previous page">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4" d="M4.66667 0.666626L0.666672 4.66663L4.66667 8.66663"
+                                                stroke="#171717" stroke-width="1.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li><a href="/" aria-current="page" class="active">1</a></li>
+                                <li><a href="/">2</a></li>
+                                <li><a href="/">3</a></li>
+                                <li><span class="dots" aria-hidden="true">…</span></li>
+                                <li><a href="/">8</a></li>
+                                <li><a href="/" class="next" aria-label="Next page">
+                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.666656 8.66663L4.66666 4.66663L0.666656 0.666626"
+                                                stroke="#171717" stroke-width="1.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ol>
+                        </nav>
                     </div>
-                    <div class="article-hero__right">
-                        <aside class="hero-blog">
+                    <aside class="article-hero__right">
                             <article class="article-hero__right-blog blog-article article-right-block">
                                 <div class="blog-article__image">
-                                    <img src="./images/hero-blog/1.jpg" alt="black Mercedes">
+                                    <img src="./images/hero-blog/1.jpg" alt="Racer, review author" width="270" height="200" loading="lazy">
                                 </div>
                                 <div class="blog-article__content ">
                                     <h3 class="blog-article__title right-article-title">
@@ -316,7 +346,7 @@
                                     <li class="popular-articles__item article-item">
                                         <article class="car-article">
                                             <div class="popular-articles__image">
-                                                <img src="./images/popular/1.jpg" alt="black Mercedes">
+                                                <img src="./images/popular/1.jpg" alt="black Mercedes Interior" width="270" height="195" loading="lazy">
                                             </div>
                                             <a href="/" class="car-article__category category">Vehicle</a>
                                             <div class="popular-articles__description">
@@ -335,7 +365,7 @@
                                     <li class="popular-articles__item article-item">
                                         <article class="car-article">
                                             <div class="popular-articles__image">
-                                                <img src="./images/popular/2.jpg" alt="black Mercedes">
+                                                <img src="./images/popular/2.jpg" alt="A jeep is firmly standing on a steep hill" width="270" height="195" loading="lazy">
                                             </div>
                                             <a href="/" class="car-article__category category">Vehicle</a>
                                             <div class="popular-articles__description">
@@ -354,7 +384,7 @@
                                     <li class="popular-articles__item article-item">
                                         <article class="car-article">
                                             <div class="popular-articles__image">
-                                                <img src="./images/popular/3.jpg" alt="black Mercedes">
+                                                <img src="./images/popular/3.jpg" alt="A jeep is crossing a small river" width="270" height="195" loading="lazy">
                                             </div>
                                             <a href="/" class="car-article__category category">Vehicle</a>
                                             <div class="popular-articles__description">
@@ -379,32 +409,32 @@
                                 <ul class="instagram-article__list">
                                     <li class="instagram-article__item">
                                         <a href="/" class="instagram-article__link">
-                                            <img src="./images/instagram/1.jpg" alt="">
+                                            <img src="./images/instagram/1.jpg" alt="" width="130" height="130" loading="lazy">
                                         </a>
                                     </li>
                                     <li class="instagram-article__item">
                                         <a href="/" class="instagram-article__link">
-                                            <img src="./images/instagram/2.jpg" alt="">
+                                            <img src="./images/instagram/2.jpg" alt="" width="130" height="130" loading="lazy">
                                         </a>
                                     </li>
                                     <li class="instagram-article__item">
                                         <a href="/" class="instagram-article__link">
-                                            <img src="./images/instagram/3.jpg" alt="">
+                                            <img src="./images/instagram/3.jpg" alt="" width="130" height="130" loading="lazy">
                                         </a>
                                     </li>
                                     <li class="instagram-article__item">
                                         <a href="/" class="instagram-article__link">
-                                            <img src="./images/instagram/4.jpg" alt="">
+                                            <img src="./images/instagram/4.jpg" alt="" width="130" height="130" loading="lazy">
                                         </a>
                                     </li>
                                     <li class="instagram-article__item">
                                         <a href="/" class="instagram-article__link">
-                                            <img src="./images/instagram/5.jpg" alt="">
+                                            <img src="./images/instagram/5.jpg" alt="" width="130" height="130" loading="lazy">
                                         </a>
                                     </li>
                                     <li class="instagram-article__item">
                                         <a href="/" class="instagram-article__link">
-                                            <img src="./images/instagram/6.jpg" alt="">
+                                            <img src="./images/instagram/6.jpg" alt="" width="130" height="130" loading="lazy">
                                         </a>
                                     </li>
                                 </ul>
@@ -521,35 +551,9 @@
                                 </div>
                                 <button type="submit" class="form-button button">Subscribe to newsletter</button>
                             </form>
-                        </aside>
-                    </div>
+                    </aside>
                 </div>
-                <nav aria-label="Навигация по страницам">
-                    <ol class="pagination" role="list">
-                        <li><a href="/" class="prev" aria-label="Предыдущая страница">
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.4" d="M4.66667 0.666626L0.666672 4.66663L4.66667 8.66663"
-                                        stroke="#171717" stroke-width="1.33333" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li><a href="/" aria-current="page" class="active">1</a></li>
-                        <li><a href="/">2</a></li>
-                        <li><a href="/">3</a></li>
-                        <li><span class="dots" aria-hidden="true">…</span></li>
-                        <li><a href="/">8</a></li>
-                        <li><a href="/" class="next" aria-label="Следующая страница">
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.666656 8.66663L4.66666 4.66663L0.666656 0.666626" stroke="#171717"
-                                        stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ol>
-                </nav>
+
             </div>
         </section>
         <section class="most-popular popular-articles">
@@ -558,7 +562,7 @@
                     Most popular
                 </h2>
                 <ul class="popular-articles__list most-popular-row">
-                    <li class="popular-articles__item most-popular-article-item">
+                    <li class="article-item">
                         <article class="car-article">
                             <div class="popular-articles__image">
                                 <img src="./images/most-popular/1.jpg" alt="black Mercedes">
@@ -577,7 +581,7 @@
                             </div>
                         </article>
                     </li>
-                    <li class="popular-articles__item most-popular-article-item">
+                    <li class="article-item">
                         <article class="car-article">
                             <div class="popular-articles__image">
                                 <img src="./images/most-popular/2.jpg" alt="black Mercedes">
@@ -596,7 +600,7 @@
                             </div>
                         </article>
                     </li>
-                    <li class="popular-articles__item most-popular-article-item">
+                    <li class="article-item">
                         <article class="car-article">
                             <div class="popular-articles__image">
                                 <img src="./images/most-popular/3.jpg" alt="black Mercedes">
@@ -615,7 +619,7 @@
                             </div>
                         </article>
                     </li>
-                    <li class="popular-articles__item most-popular-article-item">
+                    <li class="article-item">
                         <article class="car-article">
                             <div class="popular-articles__image">
                                 <img src="./images/most-popular/4.jpg" alt="black Mercedes">
@@ -637,158 +641,158 @@
                 </ul>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container footer__inner">
-                <h2 class="visually-hidden">Informational block at the bottom of the page</h2>
-                <div class="footer__row">
-                    <div class="footer__about-us">
-                        <a href="/" class="footer__logo">
-                            <img src="./images/logo.png" alt="Premium Car Logo" width="100" height="23" loading="lazy">
-                        </a>
-                        <p class="footer__about-us-descr">
-                            Short description about the company Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
-                        </p>
-                        <div class="footer__soc1als">
-                            <h3 class="footer__soc1als-title footer-block-title">
-                                Keep in touch
-                            </h3>
-                            <ul class="footer__soc1als-list">
-                                <li class="footer__soc1als-item">
-                                    <a href="/" class="footer__soc1als-link">
-                                        <img src="./icons/facebook.svg" alt="">
-                                    </a>
-                                </li>
-                                <li class="footer__soc1als-item">
-                                    <a href="/" class="footer__soc1als-link">
-                                        <img src="./icons/twitter.svg" alt="">
-                                    </a>
-                                </li>
-                                <li class="footer__soc1als-item">
-                                    <a href="/" class="footer__soc1als-link">
-                                        <img src="./icons/pinterest.svg" alt="">
-                                    </a>
-                                </li>
-                                <li class="footer__soc1als-item">
-                                    <a href="/" class="footer__soc1als-link">
-                                        <img src="./icons/google-plus.svg" alt="">
-                                    </a>
-                                </li>
-                                <li class="footer__soc1als-item">
-                                    <a href="/" class="footer__soc1als-link">
-                                        <img src="./icons/instagram.svg" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__news">
-                        <h3 class="footer__news-title footer-block-title">
-                            Recent posts
-                        </h3>
-                        <ul class="footer__news-list">
-                            <li class="footer__news-item">
-                                <article class="footer__news-article car-article">
-                                    <div class="footer__news-article-image">
-                                        <img src="./images/footer-news/1.jpg" alt="">
-                                    </div>
-                                    <div class="footer__news-article-description">
-                                        <h4 class="footer__news-article-title article-title">
-                                            <a href="/">One of Saturn’s largest rings may be newer than…</a>
-                                        </h4>
-                                        <div class="footer__news-article-meta article-meta">
-                                            <a href="/" class="article-author">Rickie Baroch</a>
-                                            <span class="separator"> – </span>
-                                            <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
-                                        </div>
-                                    </div>
-
-                                </article>
-                            </li>
-                            <li class="footer__news-item">
-                                <article class="footer__news-article car-article">
-                                    <div class="footer__news-article-image">
-                                        <img src="./images/footer-news/2.jpg" alt="">
-                                    </div>
-                                    <div class="footer__news-article-description">
-                                        <h4 class="footer__news-article-title article-title">
-                                            <a href="/">One of Saturn’s largest rings may be newer than…</a>
-                                        </h4>
-                                        <div class="footer__news-article-meta article-meta">
-                                            <a href="/" class="article-author">Rickie Baroch</a>
-                                            <span class="separator"> – </span>
-                                            <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="footer__news-item">
-                                <article class="footer__news-article car-article">
-                                    <div class="footer__news-article-image">
-                                        <img src="./images/footer-news/3.jpg" alt="">
-                                    </div>
-                                    <div class="footer__news-article-description">
-                                        <h4 class="footer__news-article-title article-title">
-                                            <a href="/">One of Saturn’s largest rings may be newer than…</a>
-                                        </h4>
-                                        <div class="footer__news-article-meta article-meta">
-                                            <a href="/" class="article-author">Rickie Baroch</a>
-                                            <span class="separator"> – </span>
-                                            <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                    </div>
-                    <form action="/" class="footer__form-signup">
-                        <h3 class="footer__form-signup-title footer-block-title">
-                            Newsletter
-                        </h3>
-                        <div class="field">
-                            <label class="visually-hidden" for="name">Your name</label>
-                            <input type="text" id="name" name="username" class="field-control footer-field-control"
-                                placeholder="Your name">
-                        </div>
-                        <div class="field">
-                            <label class="visually-hidden" for="email">Your email adress</label>
-                            <input type="text" id="email" name="email" class="field-control footer-field-control"
-                                placeholder="Your email adress">
-                        </div>
-                        <button type="submit" class="form-button button">Subscribe to newsletter</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer__copyright" role="contentinfo">
-                <div class="container footer__copyright-row">
-                    <small>
-                        <span aria-hidden="true">©</span>
-                        <time datetime="2019">2019</time> Logwork. All rights reserved.
-                    </small>
-                    <nav class="__copyright-menu nav-menu">
-                        <ul class="nav-menu__list">
-                            <li class="nav-menu__item">
-                                <a href="/" class="nav-menu__link">Home</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="/" class="nav-menu__link">Recipes</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="/" class="nav-menu__link">Article</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="/" class="nav-menu__link">Contact</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a href="/" class="nav-menu__link">Purchase</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-            </div>
-        </footer>
     </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <h2 class="visually-hidden">Informational block at the bottom of the page</h2>
+            <div class="footer__row">
+                <div class="footer__about-us">
+                    <a href="/" class="footer__logo">
+                        <img src="./images/logo.png" alt="Premium Car Logo" width="100" height="23" loading="lazy">
+                    </a>
+                    <p class="footer__about-us-descr">
+                        Short description about the company Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                    </p>
+                    <div class="footer__soc1als">
+                        <h3 class="footer__soc1als-title footer-block-title">
+                            Keep in touch
+                        </h3>
+                        <ul class="footer__soc1als-list">
+                            <li class="footer__soc1als-item">
+                                <a href="/" class="footer__soc1als-link">
+                                    <img src="./icons/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__soc1als-item">
+                                <a href="/" class="footer__soc1als-link">
+                                    <img src="./icons/twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__soc1als-item">
+                                <a href="/" class="footer__soc1als-link">
+                                    <img src="./icons/pinterest.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__soc1als-item">
+                                <a href="/" class="footer__soc1als-link">
+                                    <img src="./icons/google-plus.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__soc1als-item">
+                                <a href="/" class="footer__soc1als-link">
+                                    <img src="./icons/instagram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__news">
+                    <h3 class="footer__news-title footer-block-title">
+                        Recent posts
+                    </h3>
+                    <ul class="footer__news-list">
+                        <li class="footer__news-item">
+                            <article class="footer__news-article car-article">
+                                <div class="footer__news-article-image">
+                                    <img src="./images/footer-news/1.jpg" alt="">
+                                </div>
+                                <div class="footer__news-article-description">
+                                    <h4 class="footer__news-article-title article-title">
+                                        <a href="/">One of Saturn’s largest rings may be newer than…</a>
+                                    </h4>
+                                    <div class="footer__news-article-meta article-meta">
+                                        <a href="/" class="article-author">Rickie Baroch</a>
+                                        <span class="separator"> – </span>
+                                        <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </li>
+                        <li class="footer__news-item">
+                            <article class="footer__news-article car-article">
+                                <div class="footer__news-article-image">
+                                    <img src="./images/footer-news/2.jpg" alt="">
+                                </div>
+                                <div class="footer__news-article-description">
+                                    <h4 class="footer__news-article-title article-title">
+                                        <a href="/">One of Saturn’s largest rings may be newer than…</a>
+                                    </h4>
+                                    <div class="footer__news-article-meta article-meta">
+                                        <a href="/" class="article-author">Rickie Baroch</a>
+                                        <span class="separator"> – </span>
+                                        <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="footer__news-item">
+                            <article class="footer__news-article car-article">
+                                <div class="footer__news-article-image">
+                                    <img src="./images/footer-news/3.jpg" alt="">
+                                </div>
+                                <div class="footer__news-article-description">
+                                    <h4 class="footer__news-article-title article-title">
+                                        <a href="/">One of Saturn’s largest rings may be newer than…</a>
+                                    </h4>
+                                    <div class="footer__news-article-meta article-meta">
+                                        <a href="/" class="article-author">Rickie Baroch</a>
+                                        <span class="separator"> – </span>
+                                        <time class="article-date" datetime="2019-06-06">June 6, 2019</time>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <form action="/" class="footer__form-signup">
+                    <h3 class="footer__form-signup-title footer-block-title">
+                        Newsletter
+                    </h3>
+                    <div class="field">
+                        <label class="visually-hidden" for="name">Your name</label>
+                        <input type="text" id="name" name="username" class="field-control footer-field-control"
+                            placeholder="Your name">
+                    </div>
+                    <div class="field">
+                        <label class="visually-hidden" for="email">Your email adress</label>
+                        <input type="text" id="email" name="email" class="field-control footer-field-control"
+                            placeholder="Your email adress">
+                    </div>
+                    <button type="submit" class="form-button button">Subscribe to newsletter</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__copyright" role="contentinfo">
+            <div class="container footer__copyright-row">
+                <small>
+                    <span aria-hidden="true">©</span>
+                    <time datetime="2019">2019</time> Logwork. All rights reserved.
+                </small>
+                <nav class="footer__copyright-menu menu">
+                    <ul class="footer__copyright-menu__list">
+                        <li class="menu__item">
+                            <a href="/" class="menu__link footer-menu-link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link footer-menu-link">Recipes</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link footer-menu-link">Article</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link footer-menu-link">Contact</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link footer-menu-link">Purchase</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+        <script src="./js/script.js"></script>
 </body>
 
 </html>
